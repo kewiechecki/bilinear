@@ -6,15 +6,15 @@ from collections import namedtuple
 from torch.optim import Adam
 from torch.optim.lr_scheduler import CosineAnnealingLR
 import wandb
-from shared.components import Bilinear
+from bilinear.shared.components import Bilinear
 from huggingface_hub import HfApi
 from safetensors.torch import save_model, load_model
 from huggingface_hub import hf_hub_download
 import json
 import os
 import shutil
-from language.utils import Sight
-from sae.samplers import ShuffleSampler
+from bilinear.language.utils import Sight
+from .samplers import ShuffleSampler
 
 Point = namedtuple('Point', ['name', 'layer'])
 

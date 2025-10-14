@@ -9,7 +9,7 @@ from torch import Tensor
 from jaxtyping import Float
 import wandb
 from transformers import TrainingArguments, Trainer
-from shared.components import MLP, Norm
+from bilinear.shared.components import MLP, Norm
 
 
 class Config(PretrainedConfig):

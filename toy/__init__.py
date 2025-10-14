@@ -1,1 +1,1 @@
-from toy.model import Model, Config
+from .model import Model, Config

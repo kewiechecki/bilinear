@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import DataLoader
 import gc
 import numpy as np
-from language.utils import Sight
+from .utils import Sight
 from transformers import TrainerCallback
 from torch import nn
 

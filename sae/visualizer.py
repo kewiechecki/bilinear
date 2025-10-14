@@ -1,6 +1,6 @@
 import torch
-from sae.sae import SAE, Point
-from sae.samplers import MultiSampler
+from .sae import SAE, Point
+from .samplers import MultiSampler
 from einops import *
 from datasets import load_dataset, Dataset
 from tqdm import tqdm
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from huggingface_hub import hf_hub_download, HfApi
 from safetensors.torch import save_file
 from safetensors import safe_open
-from language import Sight
+from bilinear.language import Sight
 import os
 
 

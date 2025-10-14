@@ -1,7 +1,7 @@
 import torch
 from einops import *
 
-from sae import SAE
+from .sae import SAE
 from tqdm import tqdm
 
 
